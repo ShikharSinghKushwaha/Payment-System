@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Integration Sys</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <!-- <header>
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+    </header> -->
+    <div class="bg-image">
+    <div class="heading">
+        <div class="moto">
+            <h1>Help us to Save the<br><span id="change" style="color:rgb(0, 0, 0);font-weight:480 ;">World</span><br>by oNE dONATION</h1>
+        </div>
+        <div class="button">
+        <a href="donate.html" target="_blank"><button class="btn">donate</button></a>
+        </div>
+    </div>
+</div>
+<script>
+  
+    let name = ["World","Future","Generation","Children"];
+   let eval = 0;
+    let id = document.getElementById('change');
+    let inst =setInterval(anime, 1000);
+
+    function anime(){
+     id.innerHTML = name[eval];
+     eval++;
+     if(eval >= name.length){
+        eval = 0;
+     }
+    
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500&family=Kanit:ital,wght@0,300;1,400&family=Roboto+Slab:wght@300;400;500&family=Signika+Negative&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Roboto Slab;
+background:#f2efea;
+}
+img { -webkit-filter: blur(0);
+     -moz-filter: blur(0);
+      -o-filter: blur(0);
+       -ms-filter: blur(0); 
+       filter: blur(0); }
+.bg-image{
+    background-image:linear-gradient(to 
+    bottom, rgba(0,0,0,0), rgba(0,0,0,.9)), url('https://cdn.stocksnap.io/img-thumbs/960w/sea-ocean_7BE76L6OGS.jpg');
+    margin-top: 0;
+    image-rendering: pixelated;
+    /* background: transparent; */
+     background-attachment: fixed; 
+    background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+width: 100%;
+height: 100vh;
+}
+.heading{
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+    top: 20%;
+    left: auto;
+    text-transform: uppercase;
+    background-color: black;
+    height: 50vh;
+    padding: 20px;
+  }
+  .moto{
+    margin-top: 20px;
+   text-align:center;
+   background-color: gray;
+   opacity: .9;
+  
+}
+.moto h1{
+    color: white;
+    font-weight: 400;
+}
+
+.button{
+    max-width: 200px;
+    border: 2px solid white;
+    margin: auto;
+    margin-top: 50px;
+    background-color:rgb(102, 201, 255) ;
+    border-radius: 10px;
+}
+.btn{
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-family: Roboto Slab;
+    font-weight: 500;
+    font-size:19px;
+    color: black;
+     background:white; 
+}
+.button button{
+    border:none;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+}
+.button button:hover{
+/* background-color: dodgerblue; */
+box-shadow: 0px 0px 3px 3px blue;
+transition: .3s ease-out;
+/* font-weight: bold; */
+border-radius: 10px;
+}
+
+@media (max-width:300px){
+ .heading{
+    width: 200px;
+ }
+
+}
+
+/* DONATE PAGE STYLING */
+.text{
+    text-align: center;
+    /* margin-top: 40px; */
+    text-decoration: underline;
+    text-decoration-color: dodgerblue;
+   text-underline-offset: 1em ;
+   width: 100%;
+}
+.main-container{
+    width: 400px;
+    border: 2px solid black;
+    height: 90vh;
+    margin: auto;
+   margin-top: 50px;
+   
+}
+
+.sec-container{
+    width: 350px;
+  
+    position: relative;
+    margin-top: 25px;
+    margin: auto;
+    height: 75vh;
+    /* border: 2px solid red; */
+}
+
+.paypal{
+    /* max-width: 400px; */
+    
+    /* border: 2px solid black; */
+
+}
+.paypal button{
+    margin: 5.5px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 330px;
+    padding: 7px;
+    border: none;
+    background-color: rgb(255, 212, 19);
+  font-size: 19px;
+  font-family: Roboto Slab;
+  margin-top: 39px;
+  cursor: pointer;
+}
+.separator h4{
+    text-align: center;
+    margin-top: 30px;
+}
+.lines{
+    width:100% ;
+    position: relative;
+}
+.lines::after, .lines::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background: rgb(3, 41, 255);
+    margin: auto;
+    margin-top: -8px;
+    top: 20px;
+    padding-left: 10px;
+}
+.lines::before{
+    left: 0;
+   
+}
+.lines::after{
+    right: 0;
+    color: red;
+}
+.form form{
+
+}
+.form form label{
+    font-size: 19px;
+    margin-top: 50px;
+    margin: 6px;
+    position: relative;
+}
+.form form input[type]{
+    margin: 5px;
+    padding: 5px;
+    width: 96%;
+    margin-bottom: 10px;
+    border: 2.3px solid black;
+    margin-top: 20px;
+   font-size: 19px;
+    outline: none;
+
+}
+.form form input[placheolder]{
+    font-size: 20px;
+}
+.form form input:focus{
+    /* box-shadow: 0px 0px 2px 2px ; */
+}
+
+.pay 
+input{
+    margin: 5.5px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 350px;
+    padding: 7px;
+    border: none;
+    background-color: rgb(19, 220, 255);
+  font-size: 19px;
+  font-family: Roboto Slab;
+  margin-top: 9px;
+  cursor: pointer;
+}
+.pay input:hover{
+background-color: gray;
+color: black;
+transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+/* animation-name: gradient;
+animation-duration: 2s;
+animation-iteration-count: infinite; */
+}
+/* @keyframes{
+    from{
+        background-color:red;
+        right:0;
+    }
+    to{
+        background-color: yellow;
+        left: 0;
+    }
+} */
+.reset{
+    margin: auto;
+    width: 100px;
+}
+.reset button{
+    width: 100px;
+    margin: 5.5px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: auto;
+    
+    padding: 2px;
+    color: red;
+    border: none;
+    border: 2px solid black;
+  font-size: 14px;
+  font-family: Roboto Slab;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.reset button:hover{
+    background-color: yellow;
+    color: black;
+}
